@@ -1,0 +1,239 @@
+@import 'config';
+@import 'utilities';
+
+//General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: $body-color;
+  color: $light-color;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// Logo
+#logo {
+  width: 175px;
+  height: 70px;
+}
+
+// Main Nav
+#main-nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.85rem;
+
+  ul {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $light-color;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $main-color;
+    }
+
+  }
+}
+
+// Header
+#header {
+
+  &-home {
+    height: 90vh;
+    padding-bottom: 10vh;
+    box-sizing: border-box;
+
+
+    // Header Content
+    .header-content {
+      padding-top: 20%;
+      max-width: 852px;
+      margin: auto;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.7;
+      }
+
+      .text {
+        font-size: 2.5rem;
+        color: $medium-color;
+      }
+    }
+  }
+}
+
+// About Me
+
+#about {
+  color: $light-color;
+
+  
+  .card {
+    margin: 20% auto;
+    max-width: 900px;
+    
+
+    img {
+      height: 120px;
+      width: 120px;
+      display: inline-block;
+      border-radius: 50%;
+      margin-top: 2rem;
+      background-position: center;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      width: 70%;
+      margin: auto;
+      color: $medium-color;
+    }
+
+    div {
+      display: flex;
+      align-content: center;
+    } 
+
+    .skills {
+      color: $medium-color;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(140px, 200px));
+      overflow: hidden;
+      padding: 0 0 0 7rem;
+      margin: 20px auto;
+      list-style: none;
+      text-align: left;
+
+      i {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+
+// Home B: Process
+#education {
+  margin-top: 35rem;
+  margin: auto;
+  width: $website-width;
+
+  .education {
+
+    &-section {
+      margin-bottom: 5rem;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+      padding: 0.4rem 0;
+    }
+    
+  }
+
+  .degree {
+    font-weight: 100;
+    color: $medium-color;
+    padding-bottom: 1.5rem;
+
+    i {
+      font-size: 0.25rem;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: $main-color;
+    }
+  }
+}
+
+//Contact
+#contact {
+  
+    color: $medium-color;
+    margin-bottom: 25vh;
+
+    .section-title {
+      color: $light-color;
+    }
+
+    .text-fields {
+      display: grid;
+      grid-template-areas: 
+        'name email'
+        'subject subject'
+        'message message';
+        grid-gap: 1.2rem;
+        margin-bottom: 1.2rem;
+
+        //Grid Areas
+        .name-input {
+          grid-area: name;
+        }
+
+        .subject-input {
+          grid-area: subject;
+        }
+
+        .email-input {
+          grid-area: email;
+        }
+
+        .message-input {
+          grid-area: message;
+          height: 100px;
+        }
+
+        .text-input {
+          padding: 0.5rem 1rem;
+        }
+    }
+}
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 10rem;
+
+  .footer-content {
+    text-align: center;
+    padding: 66px 0;
+  }
+}
+
+
+// Import media queries
+@import 'media';

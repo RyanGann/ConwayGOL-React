@@ -1,0 +1,131 @@
+// Tablets & Smaller
+@media(max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  #home-a {
+    
+    .social-links {
+      flex-direction: column;
+      align-items: center;
+      height: 200px;
+
+      a {
+        padding: 0.7rem 2rem;
+        width: 7rem;
+      }
+    }
+  }
+
+  #home-b {
+    margin-top: 50rem;
+  }
+  
+}
+/* NEEDS WORK */
+// IPad Pro
+@media(max-height: 1366){
+  #header-home {
+    
+  
+    .header-content {
+      padding-top: 5rem;
+  
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  #home-a {
+    margin: 0;
+    .card {
+      margin: 0;
+    }
+  }
+}
+
+
+
+// Smartphones
+@media(max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+
+      .header-content {
+        display: none;
+      }
+    }
+  }
+
+  #home-b {
+    margin-top: 70rem;
+  }
+
+  // Stack Grid Columns
+  #home-b .process {
+    grid-template-columns: 1fr;
+  }
+
+  // Contact 
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas: 
+        'name'
+        'email'
+        'subject'
+        'message';
+      }
+    }
+  }
+  
+}
+
+// Landscape
+@media(max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 2rem;
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  #home-a {
+    margin-top: 2rem;
+
+    .social-links {
+
+      a {
+        padding: 0.7rem 1rem;
+      }
+    }
+  }
+
+  #home-b {
+    margin-top: 50rem;
+  }
+}

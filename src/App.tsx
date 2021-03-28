@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useRef } from "react";
 import produce from 'immer';
 
-const numRows = 50;
-const numCols = 50;
+const numRows = 30;
+const numCols = (window.screen.width)/20;
 
 const operations = [
   [0, 1],
@@ -120,8 +120,8 @@ const App: React.FC = () => {
               style={{
                 width: 20, 
                 height: 20, 
-                backgroundColor: grid[i][k] ? 'pink' : undefined,
-                border: "solid 1px black"
+                backgroundColor: grid[i][k] ? '#64ffda' : 'black',
+                border: "solid 1px #383838"
               }} 
             />
           ))

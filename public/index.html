@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <meta charset="UTF-8">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -15,20 +22,18 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/f0735387ac.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Ryan Gann</title>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +44,151 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- Header -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <ul>
+            <li><a href="https://github.com/RyanGann"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ryan-gann/"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+          
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="pdf/ryan_gann_resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-content">
+          <h1><span class="text">I Am Ryan</span> <br>
+            The <span class="txt-type" data-wait="3000" data-words='["CS Student"]'></span></h1>
+          <p class="lead">I'm a computer science student who enjoys programming and learning new 
+            technologies. <br>
+            Want to know more?</p>
+          <a class="btn-main" href="#about">About Me</a>
+        </div>
+      </div>
+    </header>
+  
+
+    <!--Section A: About-->
+    <section id="about" class="text-center">
+      <div class="container">
+        <div class="card">
+          <img src="dist/img/about.jpg" alt="About Me" id="profile" class="py-2">
+          <h2 class="section-title">Ryan Gann</h2>
+          <p>Welcome to my website! My name is Ryan and I am a 23 year old student at the
+            University of North Alabama. I'm majoring
+            in computer science with a minor in 
+            mathematics. 
+            I will graduate in May 2021 and am actively
+            looking for a full time position. Below are some of my skills, and languages and 
+            technologies I am familiar with:
+          </p>
+          <div>
+            <ul class="skills">
+              <li><i class="fas fa-angle-right"></i> C & C++</li>
+              <li><i class="fas fa-angle-right"></i> Python</li>
+              <li><i class="fas fa-angle-right"></i> Database Management</li>
+              <li><i class="fas fa-angle-right"></i> 
+              AI</li>
+              <li><i class="fas fa-angle-right"></i> Git & Github</li>
+              <li><i class="fas fa-angle-right"></i> Windows & Linux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Education -->
+    <section id="education" class="text-center py-2">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="bottom-line"></div>
+        <div class="education-section">
+          <h3 class="education-title">Bevill State Community College</h3>
+          <p class="degree">Associate in Science <i class="fas fa-circle"></i> Business Administration</p>
+          <p>I studied business at Bevill State. Here I took various CIS, accounting,
+            business law, and
+            statistics courses. <br>
+            <span class="degree">I recieved my associates degree in 2018.</span></p>
+        </div>
+
+        <div class=" education-section">
+          <h3 class="education-title">University of North Alabama</h3>
+          <p class="degree">Bachelor in Computer Science <i class="fas fa-circle"></i> Mathematics Minor</p>
+          <p>I am currently a senior at the University of North Alabama studying computer science and
+            mathematics. Since
+            beginning my studies here, I have learned a lot from my various computer, programming, and data structure
+            classes. <br>
+            <span class="degree">I will graduate in the Spring of 2021.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Feel free to send me an email! I'll be sure to respond quickly.</p>
+        <a class="btn-main" href="mailto:ryan.gannb@gmail.com">Email Me</a>
+      </div>
+    </section>
+
+    <section id="projects" class="text-center py-3">
+      <h2 class="section-title">Projects</h2>
+      <div class="bottom-line"></div>
+
+      <div class="container">
+        <h2 class="education-title">Conway's Game of Life</h2>
+        <p>
+          The Game of Life is a cellular automaton devised
+          by the British mathematician John Horton Conway in 
+          1970. Create an initial state below by clicking some
+          squares, or clicking the "random" button. When you 
+          are ready, click "start" and watch the evolution take
+          place.  
+        </p>
+      </div>
+      <!-- style="margin: auto; width: 50%;" -->
+      <div id="root" ></div>
+      <br>
+      <div class="container"> 
+        <h2 class="education-title">Client/Server in C</h2>
+        <p>
+          This client/server system implements a "string 
+          modification" protocol using TCP. 
+          The client sends an opcode
+          and payload to the server in a single formatted 
+          packet. The opcode describes how the server should
+          modify the string. The server modifies the string, 
+          packages it in a packet, and sends it back to the 
+          client. The client then displays the payload for the 
+          user. 
+        </p>
+        <video id="client-server" width="640" height="480" autoplay loop muted>
+          <source src="dist/img/client-server.mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>This website was built using React, 
+          JavaScript, TypeScript, HTML, and CSS.
+        </p>
+      </div>
+    </footer>
+
+    <!--Smooth Scroll-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Type Effect -->
+    <script src="dist/js/main.js"></script>
+
   </body>
 </html>
