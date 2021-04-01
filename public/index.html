@@ -56,7 +56,7 @@
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="pdf/ryan_gann_resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="dist/pdf/ryan_gann_resume.pdf" target="_blank">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -153,7 +153,7 @@
         </p>
       </div>
       <!-- style="margin: auto; width: 50%;" -->
-      <div id="root" ></div>
+      <div id="game-of-life" class="py-3"></div>
       <br>
       <div class="container"> 
         <h2 class="education-title">Client/Server in C</h2>
@@ -170,6 +170,25 @@
         </p>
         <video id="client-server" width="640" height="480" autoplay loop muted>
           <source src="dist/img/client-server.mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="container"> 
+        <h2 class="education-title">Tokenizer in C</h2>
+        <p>
+          I wrote this tokenizer as part of an automata
+          theory/compiler construction class. The program
+          takes as input text files that contain programs
+          written in a simplified Pascal-like language. It
+          reads each line of the program and breaks the line
+          up into individual tokens and labels the tokens 
+          based on if it is a keyword, variable type, variable,
+          or some symbol that is valid in the Pascal-like 
+          language. Now these tokens are ready to be passed to
+          a parser.
+        </p>
+        <video id="client-server" width="640" height="480" autoplay loop muted>
+          <source src="dist/img/tokenizer.mp4">
           Your browser does not support the video tag.
         </video>
       </div>
