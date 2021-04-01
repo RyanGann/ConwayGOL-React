@@ -59,6 +59,10 @@ input[class^='btn-']:hover {
 .my-4 {
   margin: 4rem 0; }
 
+.txt-type {
+  margin: 1px;
+}
+
 .section-title {
   font-size: 2rem;
   display: block;
