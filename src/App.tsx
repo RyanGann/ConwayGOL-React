@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useRef } from "react";
 import produce from 'immer';
 
-const numRows = 30;
-const numCols = (window.screen.width)/20;
+const numRows = Math.round((document.documentElement.clientHeight)*(2/3)/20)-5;
+const numCols = Math.round((document.documentElement.scrollWidth)/20)-1;
 
 const operations = [
   [0, 1],

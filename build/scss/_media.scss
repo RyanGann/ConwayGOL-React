@@ -1,5 +1,14 @@
 // Tablets & Smaller
 @media(max-width: 800px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+  
   #header-home {
     height: 30rem;
 
@@ -70,7 +79,7 @@
   #header {
     &-home {
       height: 10rem;
-      border-bottom: 3px solid $main-color;
+      //border-bottom: 3px solid $main-color;
 
       .header-content {
         display: none;
@@ -85,6 +94,15 @@
   // Stack Grid Columns
   #home-b .process {
     grid-template-columns: 1fr;
+  }
+
+  //about
+  #about {
+    .card {
+      .skills {
+        padding: 0 0 0 3rem;
+      }
+    }
   }
 
   // Contact 

@@ -59,10 +59,6 @@ input[class^='btn-']:hover {
 .my-4 {
   margin: 4rem 0; }
 
-.txt-type {
-  margin: 1px;
-}
-
 .section-title {
   font-size: 2rem;
   display: block;
@@ -107,7 +103,7 @@ img {
 
 #main-nav {
   display: flex;
-  
+  justify-content: flex-start;
   font-size: 0.85rem; }
   #main-nav ul {
     display: flex;
@@ -174,8 +170,7 @@ img {
 
 #education {
   margin-top: 35rem;
-  margin: auto;
-  width: 900px; }
+  margin: auto; }
   #education .education-section {
     margin-bottom: 5rem; }
   #education .education-title {
@@ -193,14 +188,12 @@ img {
 
 #contact {
   color: #8892b0;
-  /*margin-bottom: 25vh; */}
+  margin-bottom: 25vh; }
   #contact .section-title {
     color: #ccd6f6; }
   #contact .text-fields {
     display: grid;
-    grid-template-areas: 'name email'
- 'subject subject'
- 'message message';
+    grid-template-areas: 'name email' 'subject subject' 'message message';
     grid-gap: 1.2rem;
     margin-bottom: 1.2rem; }
     #contact .text-fields .name-input {
@@ -215,7 +208,20 @@ img {
     #contact .text-fields .text-input {
       padding: 0.5rem 1rem; }
 
-  
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; }
+  .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#projects {
+  margin: auto; }
+
 #main-footer {
   background: #020c1b;
   color: #fff;
@@ -225,6 +231,11 @@ img {
     padding: 66px 0; }
 
 @media (max-width: 800px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
   #header-home {
     height: 30rem; }
     #header-home .header-content {
@@ -259,19 +270,17 @@ img {
     #main-nav li {
       padding: 1rem; }
   #header-home {
-    height: 10rem;
-    border-bottom: 3px solid #64ffda; }
+    height: 10rem; }
     #header-home .header-content {
       display: none; }
   #home-b {
     margin-top: 70rem; }
   #home-b .process {
     grid-template-columns: 1fr; }
+  #about .card .skills {
+    padding: 0 0 0 3rem; }
   #contact-a .text-fields {
-    grid-template-areas: 'name'
- 'email'
- 'subject'
- 'message'; } }
+    grid-template-areas: 'name' 'email' 'subject' 'message'; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {
